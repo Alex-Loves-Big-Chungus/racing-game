@@ -2948,7 +2948,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4068442899868389187}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644419879
 GameObject:
@@ -4977,7 +4977,7 @@ Transform:
   m_LocalPosition: {x: -0.3600006, y: 3.01, z: -8.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4068442899868389187}
+  m_Father: {fileID: 8446324852104372391}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965249162
@@ -9000,7 +9000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8446324852104372391}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3923223834394415650
 MeshRenderer:
@@ -9068,12 +9068,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 963194228}
   - {fileID: 633184790}
   - {fileID: 5750646718484233551}
   - {fileID: 5419602914220795173}
   m_Father: {fileID: 8446324852104372391}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4127118481824497611
 MeshFilter:
@@ -9393,7 +9392,7 @@ Transform:
   - {fileID: 2697895335494149701}
   - {fileID: 424538807249037381}
   m_Father: {fileID: 4068442899868389187}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5428854155663261806
 MeshRenderer:
@@ -9448,7 +9447,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8446324852104372391}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5447660019061507695
 MeshFilter:
@@ -9500,7 +9499,7 @@ Transform:
   - {fileID: 3173973118159133953}
   - {fileID: 6047514720849228322}
   m_Father: {fileID: 4068442899868389187}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5757404233430273038
 Transform:
@@ -10179,6 +10178,7 @@ Transform:
   m_LocalPosition: {x: 255.5, y: 0, z: 136.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 963194228}
   - {fileID: 5433805222350605686}
   - {fileID: 3599698377213510000}
   - {fileID: 4068442899868389187}
@@ -10446,15 +10446,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54abf7f7169b0f34f8f8dd8edd17faac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerOfMass: {fileID: 0}
   WheelColliderLeftFront: {fileID: 8519234532852410377}
   WheelColliderRightFront: {fileID: 1226677130420665070}
   WheelColliderLeftBack: {fileID: 8660030786833145211}
   WheelColliderRightBack: {fileID: 6711579058450418268}
   WheelLeftFront: {fileID: 7431725753592345133}
-  WheelRightFront: {fileID: 0}
+  WheelRightFront: {fileID: 6818944812125426717}
   WheelLeftBack: {fileID: 3173973118159133953}
   WheelRightBack: {fileID: 6047514720849228322}
+  centerOfMass: {fileID: 633184790}
   motorTorque: 300
   maxSteer: 20
 --- !u!1 &9167665339879946363
