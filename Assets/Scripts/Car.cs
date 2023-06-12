@@ -2,40 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Car : MonoBehaviour
-{
-    public Transform centerOfMass;
-
-    public WheelCollider WheelColliderLeftFront;
-    public WheelCollider WheelColliderRightFront;
-    public WheelCollider WheelColliderLeftBack;
-    public WheelCollider WheelColliderRightBack;
-
-    public Transform WheelLeftFront;
-    public Transform WheelRightFront;
-    public Transform WheelLeftBack;
-    public Transform WheelRightBack;
-
-    public float motorTorque = -100f;
-    public float maxSteer = 20f;
+public class Car : MonoBehaviour {
+    public WheelCollider WheelColliderLeftFront,WheelColliderRightFront, WheelColliderLeftBack, WheelColliderRightBack;
+    public Transform WheelLeftFront, WheelRightFront, WheelLeftBack, WheelRightBack, centerOfMass;
+    public float motorTorque = -100f, maxSteer = 20f;
     private Rigidbody Rb;
 
-    void Start()
-    {
+    void Start() {
         Rb = GetComponent<Rigidbody>();
         Rb.centerOfMass = centerOfMass.localPosition;
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         WheelColliderLeftBack.motorTorque = Input.GetAxis("Vertical") * motorTorque;
         WheelColliderRightBack.motorTorque = Input.GetAxis("Vertical") * motorTorque;
         WheelColliderLeftFront.steerAngle = Input.GetAxis("Horizontal") * maxSteer;
         WheelColliderRightFront.steerAngle = Input.GetAxis("Horizontal") * maxSteer;
     }
 
-    void Update()
-    {
+    void Update() {
         var pos = Vector3.zero;
         var rot = Quaternion.identity;
 
